@@ -16,8 +16,9 @@
 <!-- ================= ПЕРВЫЙ ЭКРАН ================= -->
 <section class="lock-screen" id="lockScreen">
 
+    <!-- ИСПРАВЛЕНО: видео в корне -->
     <video class="bg-video" autoplay muted loop playsinline preload="auto">
-        <source src="video/lock.mp4" type="video/mp4">
+        <source src="lock.mp4" type="video/mp4">
     </video>
 
     <div class="overlay"></div>
@@ -32,8 +33,9 @@
         <p class="lock-hint">Свайпните вправо</p>
     </div>
 
+    <!-- ИСПРАВЛЕНО: аудио в корне -->
     <audio id="bgAudio" loop preload="auto">
-        <source src="music/song.mp4" type="video/mp4">
+        <source src="song.mp4" type="video/mp4">
     </audio>
 
 </section>
@@ -41,8 +43,9 @@
 <!-- ================= ВТОРОЙ ЭКРАН ================= -->
 <section class="main-screen" id="mainScreen">
 
+    <!-- ИСПРАВЛЕНО: видео в корне -->
     <video class="bg-video" autoplay muted loop playsinline preload="auto">
-        <source src="video/main.mp4" type="video/mp4">
+        <source src="main.mp4" type="video/mp4">
     </video>
 
     <div class="overlay light"></div>
@@ -54,7 +57,8 @@
         <!-- IMAGE BLOCK -->
         <div class="image-block">
             <div class="wedding wedding-top animate-left">WEDDING</div>
-            <img src="images/photo.jpg" class="main-photo animate-photo" alt="photo">
+            <!-- ИСПРАВЛЕНО: фото в корне -->
+            <img src="photo.jpg" class="main-photo animate-photo" alt="photo">
             <div class="wedding wedding-bottom animate-right">DAY</div>
         </div>
 
@@ -109,7 +113,8 @@
         <h2 class="title scroll-item">LOCATION</h2>
 
         <div class="location scroll-location">
-            <img src="images/location.jpg" class="location-image" alt="location">
+            <!-- ИСПРАВЛЕНО: фото в корне -->
+            <img src="location.jpg" class="location-image" alt="location">
 
             <div class="location-text">
                 <strong>Банкет в ресторане «Imperial»</strong>
@@ -132,11 +137,12 @@
         </p>
 
         <div class="dress-colors scroll-timer">
-            <div class="color-circle delay-1"><img src="images/color1.jpg"></div>
-            <div class="color-circle delay-2"><img src="images/color2.jpg"></div>
-            <div class="color-circle delay-3"><img src="images/color3.jpg"></div>
-            <div class="color-circle delay-4"><img src="images/color4.jpg"></div>
-            <div class="color-circle delay-5"><img src="images/color5.jpg"></div>
+            <!-- ИСПРАВЛЕНО: все картинки в корне -->
+            <div class="color-circle delay-1"><img src="color1.jpg" alt="Цвет 1"></div>
+            <div class="color-circle delay-2"><img src="color2.jpg" alt="Цвет 2"></div>
+            <div class="color-circle delay-3"><img src="color3.jpg" alt="Цвет 3"></div>
+            <div class="color-circle delay-4"><img src="color4.jpg" alt="Цвет 4"></div>
+            <div class="color-circle delay-5"><img src="color5.jpg" alt="Цвет 5"></div>
         </div>
 
         <!-- ================= DETAILS ================= -->
