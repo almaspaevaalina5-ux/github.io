@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+
+    <!-- ШРИФТЫ -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- СТИЛИ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= ПЕРВЫЙ ЭКРАН ================= -->
+<section class="lock-screen" id="lockScreen">
+
+    <video class="bg-video" autoplay muted loop playsinline preload="auto">
+        <source src="video/lock.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="lock-content">
+        <h1 class="lock-title">WEDDING DAY</h1>
+
+        <div class="slider-area" id="sliderArea">
+            <div class="slider-handle" id="sliderHandle"></div>
+        </div>
+
+        <p class="lock-hint">Свайпните вправо</p>
+    </div>
+
+    <audio id="bgAudio" loop preload="auto">
+        <source src="music/song.mp4" type="video/mp4">
+    </audio>
+
+</section>
+
+<!-- ================= ВТОРОЙ ЭКРАН ================= -->
+<section class="main-screen" id="mainScreen">
+
+    <video class="bg-video" autoplay muted loop playsinline preload="auto">
+        <source src="video/main.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay light"></div>
+
+    <div class="content">
+
+        <div class="top-space"></div>
+
+        <!-- IMAGE BLOCK -->
+        <div class="image-block">
+            <div class="wedding wedding-top animate-left">WEDDING</div>
+            <img src="images/photo.jpg" class="main-photo animate-photo" alt="photo">
+            <div class="wedding wedding-bottom animate-right">DAY</div>
+        </div>
+
+        <!-- TEXT -->
+        <h2 class="title scroll-item">ДОРОГИЕ ГОСТИ!</h2>
+
+        <p class="text scroll-item">Любовь — это когда «я» становится «мы».</p>
+
+        <p class="text scroll-item">
+            Мы сделали свой выбор сердцем и хотим отпраздновать рождение нашей семьи
+            в кругу самых близких и любимых людей.
+        </p>
+
+        <p class="text scroll-item">
+            Будем счастливы, если вы станете частью нашего самого важного дня.
+        </p>
+
+        <!-- DATE -->
+        <div class="date scroll-item">30 | 05 | 2026</div>
+
+        <!-- TIMER -->
+        <div class="countdown-title scroll-item">ДО ТОРЖЕСТВА ОСТАЛОСЬ</div>
+
+        <div class="timer scroll-timer">
+            <div class="time timer-item delay-1">
+                <span id="days">0</span>
+                <small>ДНЕЙ</small>
+            </div>
+            <div class="time timer-item delay-2">
+                <span id="hours">0</span>
+                <small>ЧАСОВ</small>
+            </div>
+            <div class="time timer-item delay-3">
+                <span id="minutes">0</span>
+                <small>МИНУТ</small>
+            </div>
+            <div class="time timer-item delay-4">
+                <span id="seconds">0</span>
+                <small>СЕКУНД</small>
+            </div>
+        </div>
+
+        <!-- ================= PROGRAM OF THE DAY ================= -->
+        <div class="program scroll-item">
+            <h2 class="program-title">PROGRAM OF THE DAY</h2>
+            <div class="program-item prog-1">14:30<br><span class="prog-text">Начало</span></div>
+            <div class="program-item prog-2">15:00<br><span class="prog-text">Церемония</span></div>
+            <div class="program-item prog-3">16:00<br><span class="prog-text">Банкет</span></div>
+        </div>
+
+        <!-- ================= LOCATION ================= -->
+        <h2 class="title scroll-item">LOCATION</h2>
+
+        <div class="location scroll-location">
+            <img src="images/location.jpg" class="location-image" alt="location">
+
+            <div class="location-text">
+                <strong>Банкет в ресторане «Imperial»</strong>
+                <span>Нижний проезд, 5 к5</span>
+            </div>
+
+<a href="https://yandex.ru/maps/?text=Оренбург%20Нижний%20проезд%205%20к5"
+               target="_blank"
+               class="map-circle">
+                Открыть карту
+            </a>
+        </div>
+
+        <!-- ================= DRESS CODE ================= -->
+        <h2 class="title scroll-item">DRESS CODE</h2>
+
+        <p class="text scroll-item dress-text">
+            Будем рады, если ваши наряды поддержат нашу концепцию –
+            но главное, чтобы вам было комфортно и радостно!
+        </p>
+
+        <div class="dress-colors scroll-timer">
+            <div class="color-circle delay-1"><img src="images/color1.jpg"></div>
+            <div class="color-circle delay-2"><img src="images/color2.jpg"></div>
+            <div class="color-circle delay-3"><img src="images/color3.jpg"></div>
+            <div class="color-circle delay-4"><img src="images/color4.jpg"></div>
+            <div class="color-circle delay-5"><img src="images/color5.jpg"></div>
+        </div>
+
+        <!-- ================= DETAILS ================= -->
+        <h2 class="title scroll-item">DETAILS</h2>
+
+        <div class="details scroll-item">
+            <p class="details-text">
+                Наш главный подарок – это ваш визит! Но если вдруг у вас есть желание нас порадовать,
+                мы будем благодарны за вклад в наш семейный бюджет.
+            </p>
+
+            <p class="details-text">
+                Дорогие гости, мы будем счастливы каждому цветку в этот день.
+                Если же вам захочется продлить для нас радость, мы с благодарностью
+                примем и цветочную подписку или сертификат — чтобы воспоминания
+                о свадьбе цвели ещё долго.
+            </p>
+
+            <p class="details-text">
+                Мы очень любим всех наших маленьких родственников.
+                Поэтому будем рады видеть их в числе важных гостей!
+            </p>
+        </div>
+
+        <!-- ================= АНКЕТА ================= -->
+        <form class="form-block scroll-item"
+              action="https://formspree.io/f/xpqaybnr"
+              method="POST">
+
+            <h2 class="title">АНКЕТА</h2>
+
+            <div class="form-question">
+                <p>1) Сможете ли Вы присутствовать на торжестве?</p>
+                <label>
+                    <input type="radio" name="presence" value="Я приду" required>
+                    Я приду / Мы придем
+                </label><br>
+                <label>
+                    <input type="radio" name="presence" value="Прийти не получится">
+                    Очень жаль, но прийти не получится
+                </label>
+            </div>
+
+            <div class="form-question">
+                <p>2) Введите Ваше имя и фамилию</p>
+                <input type="text" name="name" class="form-input"
+                       placeholder="Укажите имя и фамилию каждого гостя" required>
+            </div>
+
+            <div class="form-question">
+                <p>3) Предпочтения по напиткам</p>
+                <input type="text" name="drinks" class="form-input"
+                       placeholder="Просим указать предпочтения каждого гостя">
+            </div>
+
+            <!-- КНОПКА -->
+            <button type="submit" class="submit-btn">
+                ОТПРАВИТЬ
+            </button>
+
+            <!-- ===== ФИНАЛЬНЫЙ ТЕКСТ ===== -->
+            <h2 class="title scroll-item" style="margin-top:40px;">
+                Мы будем счастливы видеть Вас на нашем празднике!
+            </h2>
+
+            <p class="text scroll-item" style="margin-top:10px;">
+                С любовью, Виктор и Екатерина!
+            </p>
+
+        </form>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
